@@ -1,3 +1,4 @@
+# Program by Denis Nadarevic (104445626)
 # Polygon-Clipping
 Clips any polygon using specific algorithms + additional features. Multiple helper functions were implemented for this to work. The concept of ``vectors`` and ``push_back`` in C++ were used in this program.
 
