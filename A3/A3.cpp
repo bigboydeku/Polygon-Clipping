@@ -21,7 +21,7 @@ void refresh(SDL_Surface * canvas, SDL_Renderer * renderer, SDL_Texture * textur
 void drawPolygon(uint32_t pixels[][SCREEN_WIDTH], SDL_Surface * canvas, SDL_Renderer * renderer, SDL_Texture * texture);
 void drawPoint(uint32_t pixels[][SCREEN_WIDTH], int x, int y, uint32_t color);
 void drawLineAlg(uint32_t pixels[][SCREEN_WIDTH], const float x1, const float y1, const float x2, const float y2, uint32_t color);
-
+std::vector<Point> listPolygon();
 
 struct Point {
 	int x;
@@ -158,7 +158,7 @@ void drawPolygon(uint32_t pixels[][SCREEN_WIDTH], SDL_Surface * canvas, SDL_Rend
 
 /*This algorithm allows the program to store user point inputs in order using push_back
 which appends data to the end of an existing vector. Like a stack ADT. */
-std::vector<Point> menu_polygon() {
+std::vector<Point> listPolygon() {
 	std::vector<Point> pointList;
 	int n, x, y;
 	printf("# of vertices: >> ");
